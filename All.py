@@ -15,18 +15,20 @@ class All:
 
 
     def runTheStuff(self):
-#         # start the algo
-#         h = subprocess.Popen(['test'], shell=True)
-#         os.system('test')
-#         print 'test started'
-#         time.sleep(2)
 
         self.s.start()
         print 'sink started'
-        time.sleep(2)
-
         self.v.start()
         print 'ventilator started'
+
+        time.sleep(2)
+
+
+#         # start the algo
+#         h = subprocess.Popen(['test'], shell=True)
+# #         os.system('test')
+#         print 'test started'
+# #         time.sleep(2)
 
 
 if __name__=='__main__':
