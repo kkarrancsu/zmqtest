@@ -24,11 +24,18 @@ class All:
         time.sleep(2)
 
 
-#         # start the algo
-#         h = subprocess.Popen(['test'], shell=True)
-# #         os.system('test')
-#         print 'test started'
-# #         time.sleep(2)
+        # start the algo
+        h = subprocess.Popen(['./launchTest.sh'])
+#         os.system('./launchTest.sh')
+        print 'test started'
+#         time.sleep(2)
+
+        time.sleep(10)
+        h.kill()
+        self.v.terminate()
+        self.s.terminate()
+
+        print 'killed everything'
 
 
 if __name__=='__main__':
