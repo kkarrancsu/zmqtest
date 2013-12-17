@@ -25,7 +25,7 @@ class All:
 
 
         # start the algo
-        h = subprocess.Popen(['./launchTest.sh'])
+        h = subprocess.Popen(['./launchTest.sh'], close_fds=True)
 #         os.system('./launchTest.sh')
         print 'test started'
 #         time.sleep(2)
